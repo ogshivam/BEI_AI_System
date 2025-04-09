@@ -1,0 +1,39 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "email": "sachinabd857@gmail.com",
+    "interview_date": "2025-04-08 10:07:13",
+    "duration_minutes": 16.4
+  },
+  "answers": [
+    {
+      "answer": "When senior citizen complaints about service quality increased by 25% and average wait times reached 45 minutes, I immediately recognized the need for urgent action. I gathered data on peak hours and service bottlenecks, which revealed that staffing levels during busy periods were insufficient.\n\nTo address this, I implemented a scheduling system that aligned staff availability with peak customer traffic, ensuring that more team members were present during high-demand times. I also introduced a triage system, where staff could prioritize quick transactions for senior citizens, allowing them to be served more efficiently.\n\nAdditionally, I organized training sessions focused on improving service speed and customer interaction, specifically tailored for handling senior citizens' needs. By actively engaging the team and monitoring progress, we successfully reduced average wait times and significantly improved service quality for our senior customers.",
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "metrics": {
+        "communicate_clearly": 0,
+        "engage_actively": 0,
+        "engage_discussion": 0
+      },
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    },
+    {
+      "answer": "To address the decline in customer satisfaction ratings from 4.00 to 2.75, I first conducted a root cause analysis of the complaints, focusing particularly on feedback related to service delays and staff inefficiency. I organized a team meeting to discuss these findings openly, ensuring everyone understood the gravity of the situation.\n\nI then set clear, measurable goals for each team member, linking their daily tasks to our broader customer satisfaction metrics. Regular check-ins were established to monitor progress and provide support. Additionally, I implemented targeted training sessions to enhance skills in customer engagement and problem resolution.\n\nMy thought process centered on fostering accountability and collaboration, encouraging team members to take ownership of their roles in improving service quality, and reinforcing that every interaction contributes to our overall success. This approach aimed not only to elevate our metrics but also to cultivate a culture of continuous improvement.",
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "metrics": {
+        "communicate_clearly": 0,
+        "engage_actively": 0,
+        "engage_discussion": 0
+      },
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": 0.0,
+    "engage_discussion": 0.0,
+    "engage_actively": 0.0
+  },
+  "overall_score": 0.0,
+  "performance_rating": "Needs Improvement"
+}

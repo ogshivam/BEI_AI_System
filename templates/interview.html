@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEI Interview - Question {{ current_number }}/{{ total_questions }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .aspect-w-16 {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .aspect-w-16 video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes talking {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.6); }
+        }
+        
+        @keyframes eyebrowRaise {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-2px) rotate(2deg); }
+        }
+        
+        @keyframes eyeMove {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(-2px, -1px); }
+            50% { transform: translate(0, 1px); }
+            75% { transform: translate(2px, -1px); }
+        }
+        
+        @keyframes blink {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.1); }
+        }
+        
+        @keyframes idleNod {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(1.5%); }
+        }
+        
+        @keyframes lipSync {
+            0%, 100% { 
+                transform: scaleY(1);
+                height: 16px;
+            }
+            50% { 
+                transform: scaleY(0.5);
+                height: 8px;
+            }
+        }
+        
+        @keyframes thinking {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-1px) rotate(-2deg); }
+            75% { transform: translateY(1px) rotate(2deg); }
+        }
+        
+        @keyframes listeningNod {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(1%); }
+        }
+        
+        .talking #avatarMouth {
+            animation: lipSync 0.3s infinite ease-in-out;
+            transform-origin: center;
+        }
+        
+        .talking .eyebrow {
+            animation: eyebrowRaise 0.6s infinite;
+        }
+        
+        .talking .eyeball {
+            animation: eyeMove 1.2s infinite;
+        }
+        
+        .eyelid {
+            animation: blink 5s infinite;
+            transform-origin: center;
+        }
+        
+        .idle #animatedAvatar {
+            animation: idleNod 4s ease-in-out infinite;
+        }
+        
+        .listening #animatedAvatar {
+            animation: listeningNod 2s ease-in-out infinite;
+        }
+        
+        .listening .eyebrow {
+            animation: thinking 3s ease-in-out infinite;
+        }
+        
+        .listening .eyeball {
+            animation: eyeMove 2s infinite;
+        }
+        
+        .avatar-container {
+            position: relative;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .avatar-container:hover {
+            transform: scale(1.02);
+        }
+        
+        .skin-tone {
+            background: linear-gradient(135deg, #E5C5A5 0%, #D4B091 100%);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .hair {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .glasses-frame {
+            border: 2px solid #2c2c2c;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .tie {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        #animatedAvatar {
+            transition: transform 0.3s ease;
+        }
+        
+        #animatedAvatar:hover {
+            transform: scale(1.05);
+        }
+
+        .border-3 {
+            border-width: 3px;
+        }
+
+        .quadrant-container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 35% 65%;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: rgb(249, 250, 251);
+        }
+
+        .quadrant {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+        }
+
+        .quadrant:nth-child(2) {
+            min-height: 0;
+            height: 100%;
+        }
+
+        .quadrant:nth-child(4) {
+            min-height: 0;
+            height: 100%;
+        }
+
+        .avatar-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .avatar-section #animatedAvatar {
+            width: 80% !important;  /* Override the default width */
+            height: 80% !important; /* Override the default height */
+            max-width: 300px;      /* Add maximum width to prevent too large scaling */
+            max-height: 300px;     /* Add maximum height to prevent too large scaling */
+            margin: 0 auto;
+        }
+
+        .avatar-section .avatar-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .star-guide {
+            overflow-y: auto;
+        }
+
+        .answer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .answer-section textarea {
+            flex-grow: 1;
+            resize: none;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        #questionText {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        /* Avatar Base Styles */
+        .avatar-container {
+            position: relative;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .avatar-container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Hair Styles */
+        .hair {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Face/Skin Styles */
+        .skin-tone {
+            background: linear-gradient(135deg, #E5C5A5 0%, #D4B091 100%);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Glasses Styles */
+        .glasses-frame {
+            border: 2px solid #2c2c2c;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Eye Styles */
+        .eyeball {
+            background: radial-gradient(circle at 30% 30%, #4a4a4a 0%, #000000 100%);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .eyelid {
+            background: #D4B091;
+            transform-origin: top;
+        }
+
+        /* Mouth Styles */
+        #avatarMouth {
+            background: linear-gradient(180deg, #8B4513 0%, #6d3610 100%);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+            transform-origin: center;
+            transition: height 0.2s ease;
+            min-height: 8px;
+        }
+
+        /* Professional Attire */
+        .tie {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Animations */
+        @keyframes blink {
+            0%, 95%, 100% { transform: scaleY(1); }
+            97% { transform: scaleY(0.1); }
+        }
+
+        @keyframes eyeMove {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(-2px, -1px); }
+            50% { transform: translate(0, 1px); }
+            75% { transform: translate(2px, -1px); }
+        }
+
+        @keyframes lipSync {
+            0%, 100% { 
+                transform: scaleY(1);
+                height: 16px;
+            }
+            50% { 
+                transform: scaleY(0.5);
+                height: 8px;
+            }
+        }
+
+        @keyframes idleNod {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(2px) rotate(1deg); }
+        }
+
+        @keyframes listeningNod {
+            0%, 100% { transform: translateY(0) rotate(-1deg); }
+            50% { transform: translateY(3px) rotate(1deg); }
+        }
+
+        /* State Classes */
+        .idle #animatedAvatar {
+            animation: idleNod 4s ease-in-out infinite;
+        }
+
+        .listening #animatedAvatar {
+            animation: listeningNod 2s ease-in-out infinite;
+        }
+
+        .talking #avatarMouth {
+            animation: lipSync 0.3s infinite ease-in-out;
+        }
+
+        .eyelid {
+            animation: blink 4s infinite;
+        }
+
+        .eyeball {
+            animation: eyeMove 6s infinite;
+        }
+
+        /* Eyebrow Animations */
+        @keyframes eyebrowRaise {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-2px); }
+        }
+
+        .listening .eyebrow {
+            animation: eyebrowRaise 2s ease-in-out infinite;
+        }
+
+        /* Enhanced Shadow Effects */
+        .avatar-container::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 10%;
+            right: 10%;
+            height: 20px;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="m-0 p-0">
+    <div class="quadrant-container">
+        <!-- Top Left: Avatar -->
+        <div class="quadrant">
+            <div class="avatar-section">
+                <div class="w-48 h-48 mx-auto relative" id="animatedAvatar">
+                    <!-- Professional Avatar Container -->
+                    <div class="absolute inset-0 avatar-container">
+                        <!-- Hair -->
+                        <div class="absolute w-full h-20 hair top-0"></div>
+                        
+                        <!-- Face -->
+                        <div class="absolute inset-0 top-8 skin-tone rounded-full">
+                            <!-- Eyes -->
+                            <div class="absolute w-36 h-4" style="left: 22%; top: 35%;">
+                                <!-- Eyes -->
+                                <div class="absolute w-6 h-6 eyeball rounded-full" style="left: 15%; top: 0;">
+                                    <div class="absolute w-2 h-2 bg-white rounded-full" style="top: 15%; left: 15%;"></div>
+                                </div>
+                                <div class="absolute w-6 h-6 eyeball rounded-full" style="right: 15%; top: 0;">
+                                    <div class="absolute w-2 h-2 bg-white rounded-full" style="top: 15%; left: 15%;"></div>
+                                </div>
+                                <!-- Eyebrows -->
+                                <div class="absolute w-8 h-1.5 bg-gray-900 rounded-full eyebrow" style="left: 13%; top: -8px;"></div>
+                                <div class="absolute w-8 h-1.5 bg-gray-900 rounded-full eyebrow" style="right: 13%; top: -8px;"></div>
+                            </div>
+                            
+                            <!-- Nose -->
+                            <div class="absolute w-6 h-8 rounded-sm" style="left: 47%; top: 45%; background: linear-gradient(135deg, #D4B091 0%, #c4a081 100%);"></div>
+                            
+                            <!-- Mouth -->
+                            <div class="absolute w-20 h-4 rounded-full" style="left: 35%; bottom: 25%; background: linear-gradient(180deg, #8B4513 0%, #6d3610 100%);" id="avatarMouth"></div>
+                        </div>
+                        
+                        <!-- Suit Collar -->
+                        <div class="absolute bottom-0 w-full h-12 bg-gray-900">
+                            <div class="absolute left-1/2 top-0 w-8 h-8 bg-white transform -translate-x-1/2 -translate-y-3 rotate-45"></div>
+                        </div>
+                        
+                        <!-- Tie -->
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                            <div class="w-6 h-14 tie" style="margin-bottom: -8px; margin-top: 8px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-800 font-medium text-lg mt-4">Senior Manager</p>
+                <div class="mt-4 flex justify-center space-x-4">
+                    <button id="speakButton" type="button" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+                        Speak Question
+                    </button>
+                    <button id="stopButton" type="button" class="bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 hidden">
+                        Stop
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Right: Timer and Question -->
+        <div class="quadrant">
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>Question {{ current_number }} of {{ total_questions }}</span>
+                        <span id="timer">Time: 00:00</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-500" style="width: {{ (current_number / total_questions * 100)|round }}%"></div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-2">
+                        Theme: {{ theme }}
+                    </span>
+                    <p id="questionText" class="text-lg text-gray-700 mt-2">{{ question }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Left: STAR Method -->
+        <div class="quadrant">
+            <div class="star-guide h-full">
+                <h3 class="font-semibold text-blue-900 mb-4">STAR Method Guide</h3>
+                <div class="space-y-3">
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="font-medium text-blue-800">Situation</p>
+                        <p class="text-blue-700 text-sm">Set the context of your example</p>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="font-medium text-blue-800">Task</p>
+                        <p class="text-blue-700 text-sm">Describe your responsibility</p>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="font-medium text-blue-800">Action</p>
+                        <p class="text-blue-700 text-sm">Explain steps you took</p>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="font-medium text-blue-800">Result</p>
+                        <p class="text-blue-700 text-sm">Share the outcomes achieved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Right: Answer Section -->
+        <div class="quadrant">
+            <div class="answer-section h-full">
+                <form id="answerForm" class="h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2">
+                        <label for="answer" class="block text-sm font-medium text-gray-700">Your Answer</label>
+                        <div class="flex space-x-2">
+                            <button 
+                                type="button" 
+                                id="startRecording" 
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
+                                </svg>
+                                Start Recording
+                            </button>
+                            <button 
+                                type="button" 
+                                id="stopRecording" 
+                                class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                                style="display: none;"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 002 0V8a1 1 0 00-1-1zm4 0a1 1 0 00-1 1v4a1 1 0 002 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                </svg>
+                                Stop Recording
+                            </button>
+                        </div>
+                    </div>
+                    <textarea
+                        id="answer"
+                        name="answer"
+                        rows="8"
+                        class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 mb-4"
+                        placeholder="Type your response here or click the microphone button to record..."
+                        required
+                    ></textarea>
+                    <div class="flex justify-end mt-auto">
+                        <button 
+                            type="submit"
+                            class="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
+                        >
+                            Submit Answer
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Speech synthesis setup
+        const speechSynthesis = window.speechSynthesis;
+        let voices = [];
+        
+        function loadVoices() {
+            voices = speechSynthesis.getVoices();
+            if (voices.length === 0) {
+                voices = speechSynthesis.getVoices();
+            }
+        }
+        
+        speechSynthesis.onvoiceschanged = loadVoices;
+        loadVoices();
+        
+        // Avatar and speech controls
+        const speakButton = document.getElementById('speakButton');
+        const stopButton = document.getElementById('stopButton');
+        const questionText = document.getElementById('questionText').textContent;
+        const animatedAvatar = document.getElementById('animatedAvatar');
+        const avatarContainer = animatedAvatar.parentElement;
+        const mouth = document.getElementById('avatarMouth');
+        const leftEyeball = document.querySelector('.eyeball:first-child');
+        const rightEyeball = document.querySelector('.eyeball:last-child');
+        
+        function setTalking(isTalking) {
+            if (isTalking) {
+                avatarContainer.classList.remove('idle');
+                avatarContainer.classList.add('talking');
+            } else {
+                avatarContainer.classList.remove('talking');
+                avatarContainer.classList.add('idle');
+            }
+        }
+        
+        // Initial idle state
+        setTalking(false);
+        
+        // Eye tracking
+        document.addEventListener('mousemove', (e) => {
+            if (!avatarContainer.classList.contains('talking')) {
+                const rect = animatedAvatar.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                
+                const deltaX = (e.clientX - centerX) / 50;
+                const deltaY = (e.clientY - centerY) / 50;
+                
+                const limitedX = Math.max(-2, Math.min(2, deltaX));
+                const limitedY = Math.max(-1, Math.min(1, deltaY));
+                
+                leftEyeball.style.transform = `translate(${limitedX}px, ${limitedY}px)`;
+                rightEyeball.style.transform = `translate(${limitedX}px, ${limitedY}px)`;
+            }
+        });
+        
+        function speak() {
+            if (speechSynthesis.speaking) {
+                return;
+            }
+            
+            setTalking(true);
+            speakButton.classList.add('hidden');
+            stopButton.classList.remove('hidden');
+            
+            const utterance = new SpeechSynthesisUtterance(questionText);
+            
+            if (voices.length > 0) {
+                utterance.voice = voices.find(voice => voice.lang === 'en-US') || voices[0];
+            }
+            
+            utterance.rate = 1;
+            utterance.pitch = 1;
+            utterance.volume = 1;
+            
+            // Enhanced lip sync based on speech
+            const words = questionText.split(' ');
+            let wordIndex = 0;
+            
+            const lipSyncInterval = setInterval(() => {
+                if (wordIndex >= words.length) {
+                    clearInterval(lipSyncInterval);
+                    return;
+                }
+                
+                const word = words[wordIndex];
+                const wordLength = word.length;
+                
+                // More dynamic mouth movements
+                if (/[aeiouAEIOU]/.test(word)) {
+                    mouth.style.height = '16px';  // Open wide for vowels
+                } else if (wordLength <= 2) {
+                    mouth.style.height = '8px';   // Slightly open for short words
+                } else {
+                    mouth.style.height = '12px';  // Medium open for other words
+                }
+                
+                wordIndex++;
+            }, 200);  // Faster interval for more responsive animation
+            
+            utterance.onend = () => {
+                clearInterval(lipSyncInterval);
+                setTalking(false);
+                speakButton.classList.remove('hidden');
+                stopButton.classList.add('hidden');
+                mouth.style.height = '16px';  // Return to normal height
+            };
+            
+            utterance.onerror = (event) => {
+                console.error('Speech synthesis error:', event);
+                stop();
+            };
+            
+            speechSynthesis.speak(utterance);
+        }
+        
+        function stop() {
+            speechSynthesis.cancel();
+            setTalking(false);
+            speakButton.classList.remove('hidden');
+            stopButton.classList.add('hidden');
+            mouth.style.height = '16px';  // Return to normal height
+        }
+        
+        speakButton.addEventListener('click', speak);
+        stopButton.addEventListener('click', stop);
+
+        // Timer functionality
+        let startTime = Date.now();
+        setInterval(() => {
+            let elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+            let minutes = Math.floor(elapsedTime / 60);
+            let seconds = elapsedTime % 60;
+            document.getElementById('timer').textContent = 
+                `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Move setListening function to the top so it's defined before use
+        function setListening(isListening) {
+            const avatarContainer = document.getElementById('animatedAvatar').parentElement;
+            if (isListening) {
+                avatarContainer.classList.remove('idle');
+                avatarContainer.classList.add('listening');
+            } else {
+                avatarContainer.classList.remove('listening');
+                avatarContainer.classList.add('idle');
+            }
+        }
+
+        // Voice Recording Setup
+        let mediaRecorder;
+        let audioChunks = [];
+        const startRecordingBtn = document.getElementById('startRecording');
+        const stopRecordingBtn = document.getElementById('stopRecording');
+
+        // Initialize audio recording
+        async function initializeRecording() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                
+                mediaRecorder.ondataavailable = (event) => {
+                    audioChunks.push(event.data);
+                };
+
+                mediaRecorder.onstop = async () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const formData = new FormData();
+                    formData.append('audio', audioBlob, 'recording.wav');
+
+                    try {
+                        startRecordingBtn.disabled = true;
+                        const response = await fetch('/transcribe_audio', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        if (data.success) {
+                            const answerTextarea = document.getElementById('answer');
+                            // Append the transcribed text to existing text
+                            answerTextarea.value = answerTextarea.value + 
+                                (answerTextarea.value ? ' ' : '') + 
+                                data.transcription;
+                        } else {
+                            alert('Error transcribing audio: ' + data.error);
+                        }
+                    } catch (error) {
+                        console.error('Error sending audio:', error);
+                        alert('Error processing audio. Please try again.');
+                    } finally {
+                        startRecordingBtn.disabled = false;
+                        audioChunks = [];
+                    }
+                };
+
+                return true;
+            } catch (err) {
+                console.error('Error accessing microphone:', err);
+                alert('Could not access microphone. Please check permissions.');
+                return false;
+            }
+        }
+
+        async function startRecording() {
+            if (!mediaRecorder) {
+                const initialized = await initializeRecording();
+                if (!initialized) return;
+            }
+
+            try {
+                audioChunks = [];
+                mediaRecorder.start();
+                startRecordingBtn.style.display = 'none';
+                stopRecordingBtn.style.display = 'inline-flex';
+                setListening(true);
+                
+                // Add recording indicator
+                const existingIndicator = document.getElementById('recordingIndicator');
+                if (!existingIndicator) {
+                    const recordingIndicator = document.createElement('div');
+                    recordingIndicator.id = 'recordingIndicator';
+                    recordingIndicator.className = 'text-sm text-red-600 mt-2';
+                    recordingIndicator.innerHTML = '<span class="animate-pulse">●</span> Recording...';
+                    startRecordingBtn.parentNode.appendChild(recordingIndicator);
+                }
+            } catch (err) {
+                console.error('Error starting recording:', err);
+                alert('Error starting recording. Please try again.');
+                cleanupRecording();
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+                cleanupRecording();
+            }
+        }
+
+        function cleanupRecording() {
+            startRecordingBtn.style.display = 'inline-flex';
+            stopRecordingBtn.style.display = 'none';
+            setListening(false);
+            
+            const recordingIndicator = document.getElementById('recordingIndicator');
+            if (recordingIndicator) {
+                recordingIndicator.remove();
+            }
+        }
+
+        // Add event listeners to buttons
+        startRecordingBtn.addEventListener('click', startRecording);
+        stopRecordingBtn.addEventListener('click', stopRecording);
+
+        // Form submission and typing detection
+        const answerTextarea = document.getElementById('answer');
+        let typingTimeout;
+        
+        answerTextarea.addEventListener('input', () => {
+            // Clear any existing timeout
+            clearTimeout(typingTimeout);
+            
+            // Set listening state
+            setListening(true);
+            
+            // Set timeout to return to idle after 2 seconds of no typing
+            typingTimeout = setTimeout(() => {
+                setListening(false);
+            }, 2000);
+        });
+        
+        // Update the form submission to handle listening state
+        document.getElementById('answerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Stop listening animation
+            setListening(false);
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const answer = answerTextarea.value;
+            
+            if (!answer.trim()) {
+                alert('Please enter your answer before submitting.');
+                return;
+            }
+            
+            // Show loading state
+            const originalButtonText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Analyzing...';
+            
+            try {
+                const response = await fetch('/submit_answer', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        answer: answer,
+                        metrics: {
+                            communicate_clearly: 0,
+                            engage_discussion: 0,
+                            engage_actively: 0
+                        }
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+
+                // Show feedback for the current answer
+                const feedbackSection = document.createElement('div');
+                feedbackSection.className = 'bg-green-50 rounded-lg p-6 mt-4';
+                feedbackSection.innerHTML = `
+                    <h3 class="font-semibold text-green-900 mb-2">Response Recorded</h3>
+                    <p class="text-green-800">${data.feedback || 'Your response has been recorded successfully.'}</p>
+                `;
+                
+                // Insert feedback before the form
+                const answerForm = document.getElementById('answerForm');
+                answerForm.parentNode.insertBefore(feedbackSection, answerForm);
+                
+                if (data.complete) {
+                    // Show final submit button
+                    submitButton.innerHTML = 'View Final Report';
+                    submitButton.disabled = false;
+                    submitButton.onclick = () => {
+                        window.location.href = '/report';
+                    };
+                } else if (data.next_question) {
+                    // Update the question text
+                    document.getElementById('questionText').textContent = data.question;
+                    
+                    // Update the question number display
+                    document.querySelector('.text-gray-600 span:first-child').textContent = 
+                        `Question ${data.current_number} of ${data.total_questions}`;
+                    
+                    // Update the progress bar
+                    const progressBar = document.querySelector('.bg-blue-600');
+                    progressBar.style.width = `${(data.current_number / data.total_questions) * 100}%`;
+                    
+                    // Clear the answer textarea
+                    answerTextarea.value = '';
+                    
+                    // Update submit button for next question
+                    submitButton.disabled = false;
+                    submitButton.textContent = data.current_number >= data.total_questions ? 
+                        'Submit Final Answer' : 'Submit Answer';
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while submitting your answer. Please try again.');
+            } finally {
+                // Reset button state if needed
+                if (!data?.complete) {
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalButtonText;
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

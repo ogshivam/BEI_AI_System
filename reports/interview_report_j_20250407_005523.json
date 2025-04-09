@@ -1,0 +1,39 @@
+{
+  "candidate_info": {
+    "name": "j",
+    "email": "sachinabd857@gmail.com",
+    "interview_date": "2025-04-07 00:55:23",
+    "duration_minutes": 0.1
+  },
+  "responses": [
+    {
+      "theme": "Process Improvement and Service Standards: \"Standardizing Processes for Enhanced Customer Experience in Financial Services\" - Streamlining processes, implementing industry-standard service standards, and leveraging technology to improve efficiency, reduce errors, and enhance overall customer satisfaction in banking and financial services.",
+      "question": "Let's discussa specific situation where in a recent situation where customer satisfaction ratings dropped from 4.0 to 2.75 over three months, what specific steps did you take to identify the root causes of this decline and how did you engage your team to improve these metrics? How did you manage the situation?",
+      "answer": "nm",
+      "feedback": "Consider providing more detailed information about your approach. Consider describing the initial challenge in more detail. Could you detail your role in implementing the solution? How did your actions impact the final results?",
+      "metric_scores": {
+        "communicate_clearly": 0,
+        "engage_discussion": 0,
+        "engage_actively": 0
+      }
+    },
+    {
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence.",
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "answer": "nm",
+      "feedback": "Try to include more concrete details in your response. Could you elaborate on the specific situation you encountered? Could you detail your role in implementing the solution? Consider including specific metrics or improvements achieved.",
+      "metric_scores": {
+        "communicate_clearly": 0,
+        "engage_discussion": 0,
+        "engage_actively": 0
+      }
+    }
+  ],
+  "competency_scores": {
+    "communicate_clearly": 0.0,
+    "engage_discussion": 0.0,
+    "engage_actively": 0.0
+  },
+  "overall_score": 0.0,
+  "rating": "Needs Improvement"
+}

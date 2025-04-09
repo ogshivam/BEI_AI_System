@@ -1,0 +1,62 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "interview_date": "April 08, 2025",
+    "total_time": "16 minutes 21 seconds"
+  },
+  "answers": [
+    {
+      "answer": "To address the decline in customer satisfaction ratings from 4.00 to 2.75, I first conducted a root cause analysis of the complaints, focusing particularly on feedback related to service delays and staff inefficiency. I organized a team meeting to discuss these findings openly, ensuring everyone understood the gravity of the situation.\n\nI then set clear, measurable goals for each team member, linking their daily tasks to our broader customer satisfaction metrics. Regular check-ins were established to monitor progress and provide support. Additionally, I implemented targeted training sessions to enhance skills in customer engagement and problem resolution.\n\nMy thought process centered on fostering accountability and collaboration, encouraging team members to take ownership of their roles in improving service quality, and reinforcing that every interaction contributes to our overall success. This approach aimed not only to elevate our metrics but also to cultivate a culture of continuous improvement.",
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "metrics": {
+        "communicate_clearly": 2,
+        "engage_actively": 2,
+        "engage_discussion": 2
+      },
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence."
+    },
+    {
+      "answer": "When customer satisfaction ratings in Area 1 dropped from 4.00 to 2.75, I recognized that team ownership and performance were critical factors. I initiated a series of team meetings to openly discuss the decline, encouraging team members to share their perspectives on the challenges they faced.\n\nTo re-engage the team, I implemented a collaborative action plan that included setting specific performance goals tied to customer feedback. I organized workshops focused on customer service skills and empathy training, emphasizing the importance of every team member's role in enhancing the customer experience.\n\nAdditionally, I established a recognition program to celebrate individual and team successes, fostering a sense of accountability and motivation. Regular follow-ups were conducted to ensure progress and provide support. This approach aimed to create a shared commitment to improvement, ultimately leading to better customer satisfaction metrics.",
+      "feedback": "The candidate effectively communicates the situation and their approach to address the decline in customer satisfaction ratings. However, some additional details about specific performance goals and metrics could have strengthened their answer. The candidate also fails to provide a clear structure for their response, which may make it harder for the interviewer to follow their thought process. Overall, the candidate demonstrates good communication skills but can improve on providing more clarity and detail in their explanation.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 3.0
+      },
+      "question": "I'd love to hear about, as a leader in our organization, a specific situation where in a recent quarter, customer satisfaction ratings dropped from 4.00 to 2.75 in area 1. how did you handle the situation when team ownership and performance issues led to this decline? what specific actions did you take to re-engage your team and improve these metrics? What steps did you take?",
+      "theme": "Leadership and Performance Management: \"Effective Leadership for High-Performance Teams in Financial Services\" - Establishing clear leadership structures, performance management systems, and succession planning processes to drive high-performing teams, manage risk, and promote business growth."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 3.0,
+      "rating": "Good",
+      "description": "Ability to convey information in a clear, structured, and understandable manner"
+    },
+    "engage_discussion": {
+      "score": 2.5,
+      "rating": "Good",
+      "description": "Ability to participate and contribute effectively in dialogues"
+    },
+    "engage_actively": {
+      "score": 2.5,
+      "rating": "Good",
+      "description": "Level of active involvement and adaptation in communication"
+    }
+  },
+  "overall_score": 2.5,
+  "overall_rating": "Good",
+  "chart_data": {
+    "labels": [
+      "Communicate clearly and concisely",
+      "Engage in discussions",
+      "Engage actively"
+    ],
+    "scores": [
+      3.0,
+      2.5,
+      2.5
+    ]
+  }
+}

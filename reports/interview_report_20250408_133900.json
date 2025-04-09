@@ -1,0 +1,62 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "interview_date": "April 08, 2025",
+    "total_time": "1 minutes 50 seconds"
+  },
+  "answers": [
+    {
+      "answer": "When customer satisfaction ratings in Area 1 dropped from 4.00 to 2.75, I recognized that team ownership and performance were critical factors. I initiated a series of team meetings to openly discuss the decline, encouraging team members to share their perspectives on the challenges they faced.\n\nTo re-engage the team, I implemented a collaborative action plan that included setting specific performance goals tied to customer feedback. I organized workshops focused on customer service skills and empathy training, emphasizing the importance of every team member's role in enhancing the customer experience.\n\nAdditionally, I established a recognition program to celebrate individual and team successes, fostering a sense of accountability and motivation. Regular follow-ups were conducted to ensure progress and provide support. This approach aimed to create a shared commitment to improvement, ultimately leading to better customer satisfaction metrics.",
+      "feedback": "The candidate's response is generally clear and well-structured, but could benefit from more concise language in some areas. The team meeting approach to addressing the decline in customer satisfaction ratings is a good starting point, but the implementation of specific performance goals tied to customer feedback and workshops focused on customer service skills could be more detailed. Additionally, the recognition program established by the candidate could use further explanation on how it was measured and its impact on improving customer satisfaction metrics. Overall, the response shows good communication skills with minor room for improvement in structure and detail.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 3.0
+      },
+      "question": "I'd love to hear about, as a leader in our organization, a specific situation where in a recent quarter, customer satisfaction ratings dropped from 4.00 to 2.75 in area 1. how did you handle the situation when team ownership and performance issues led to this decline? what specific actions did you take to re-engage your team and improve these metrics? What steps did you take?",
+      "theme": "Leadership and Performance Management: \"Effective Leadership for High-Performance Teams in Financial Services\" - Establishing clear leadership structures, performance management systems, and succession planning processes to drive high-performing teams, manage risk, and promote business growth."
+    },
+    {
+      "answer": "When senior citizen complaints about service quality increased by 25% and average wait times reached 45 minutes, I immediately recognized the need for urgent action. I gathered data on peak hours and service bottlenecks, which revealed that staffing levels during busy periods were insufficient.\n\nTo address this, I implemented a scheduling system that aligned staff availability with peak customer traffic, ensuring that more team members were present during high-demand times. I also introduced a triage system, where staff could prioritize quick transactions for senior citizens, allowing them to be served more efficiently.\n\nAdditionally, I organized training sessions focused on improving service speed and customer interaction, specifically tailored for handling senior citizens' needs. By actively engaging the team and monitoring progress, we successfully reduced average wait times and significantly improved service quality for our senior customers.",
+      "feedback": "The candidate demonstrated a clear structure and concise information sharing in their response. They effectively conveyed the issue, implemented changes to address it, and shared results. However, there is room for improvement in actively engaging with the questioner's concerns about senior citizen complaints and service quality improvements. Additionally, while the candidate provided some context and explanation, they could have delved deeper into the root causes of the increased complaints and explored potential solutions more thoroughly.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 3.0
+      },
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 3.5,
+      "rating": "Excellent",
+      "description": "Ability to convey information in a clear, structured, and understandable manner"
+    },
+    "engage_discussion": {
+      "score": 3.0,
+      "rating": "Good",
+      "description": "Ability to participate and contribute effectively in dialogues"
+    },
+    "engage_actively": {
+      "score": 3.0,
+      "rating": "Good",
+      "description": "Level of active involvement and adaptation in communication"
+    }
+  },
+  "overall_score": 3.0,
+  "overall_rating": "Good",
+  "chart_data": {
+    "labels": [
+      "Communicate clearly and concisely",
+      "Engage in discussions",
+      "Engage actively"
+    ],
+    "scores": [
+      3.5,
+      3.0,
+      3.0
+    ]
+  }
+}

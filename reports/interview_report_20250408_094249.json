@@ -1,0 +1,50 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "email": "sachinabd857@gmail.com",
+    "interview_date": "2025-04-08 09:42:49",
+    "duration_minutes": 1016.5
+  },
+  "answers": [
+    {
+      "answer": "In response to the drop in customer satisfaction ratings from 4.00 to 2.75, I initiated a thorough analysis of the complaints, focusing on issues raised by senior citizens. I organized training sessions to enhance staff empathy and customer service skills, emphasizing the importance of treating all customers with respect.\n\nTo improve staff morale, I implemented a recognition program to acknowledge employees who excelled in customer interactions. Regular feedback sessions were held to address staff concerns and encourage open communication. Additionally, I ensured that experienced staff mentored newer employees, fostering a supportive environment and improving overall performance. This comprehensive approach aimed to rebuild customer trust and enhance service quality.",
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "metrics": {
+        "communicate_clearly": 0,
+        "engage_actively": 0,
+        "engage_discussion": 0
+      },
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    },
+    {
+      "answer": "In response to the drop in customer satisfaction ratings from 4.00 to 2.75, I initiated a thorough analysis of the complaints, focusing on issues raised by senior citizens. I organized training sessions to enhance staff empathy and customer service skills, emphasizing the importance of treating all customers with respect.\n\nTo improve staff morale, I implemented a recognition program to acknowledge employees who excelled in customer interactions. Regular feedback sessions were held to address staff concerns and encourage open communication. Additionally, I ensured that experienced staff mentored newer employees, fostering a supportive environment and improving overall performance. This comprehensive approach aimed to rebuild customer trust and enhance service quality.",
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "metrics": {
+        "communicate_clearly": 0,
+        "engage_actively": 0,
+        "engage_discussion": 0
+      },
+      "question": "Help me understanda specific situation where in a recent quarter, customer satisfaction ratings in area 1 dropped from 4.00 to 2.75, leading to a significant increase in complaints about service quality from senior citizens. describe the steps you took as a manager to address this issue and what actions did you take to improve staff morale and performance. How did you manage the situation?",
+      "theme": "Customer Service Metrics: \"Measuring Customer Satisfaction to Drive Financial Inclusion\" - Developing a robust customer satisfaction metric to track progress towards increasing access to financial services, particularly for underserved populations."
+    },
+    {
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "answer": "In response to the drop in customer satisfaction ratings from 4.00 to 2.75, I initiated a thorough analysis of the complaints, focusing on issues raised by senior citizens. I organized training sessions to enhance staff empathy and customer service skills, emphasizing the importance of treating all customers with respect.\n\nTo improve staff morale, I implemented a recognition program to acknowledge employees who excelled in customer interactions. Regular feedback sessions were held to address staff concerns and encourage open communication. Additionally, I ensured that experienced staff mentored newer employees, fostering a supportive environment and improving overall performance. This comprehensive approach aimed to rebuild customer trust and enhance service quality.",
+      "metrics": {
+        "communicate_clearly": 0,
+        "engage_discussion": 0,
+        "engage_actively": 0
+      },
+      "feedback": "Your response has been recorded. Consider providing more specific examples and following the STAR format in future responses.",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": 0.0,
+    "engage_discussion": 0.0,
+    "engage_actively": 0.0
+  },
+  "overall_score": 0.0,
+  "performance_rating": "Needs Improvement"
+}

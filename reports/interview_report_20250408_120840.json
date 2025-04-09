@@ -1,0 +1,42 @@
+{
+  "candidate_name": "SHIVAM PRATAPWAR",
+  "total_time": 121.68378591537476,
+  "answers": [
+    {
+      "answer": "When senior citizen complaints about service quality increased by 25% and average wait times reached 45 minutes, I immediately recognized the need for urgent action. I gathered data on peak hours and service bottlenecks, which revealed that staffing levels during busy periods were insufficient.\n\nTo address this, I implemented a scheduling system that aligned staff availability with peak customer traffic, ensuring that more team members were present during high-demand times. I also introduced a triage system, where staff could prioritize quick transactions for senior citizens, allowing them to be served more efficiently.\n\nAdditionally, I organized training sessions focused on improving service speed and customer interaction, specifically tailored for handling senior citizens' needs. By actively engaging the team and monitoring progress, we successfully reduced average wait times and significantly improved service quality for our senior customers",
+      "feedback": "The candidate demonstrates good communication skills in sharing a specific situation where senior citizen complaints about service quality increased by 25%. However, there could be minor improvements made to structure and clarity, as some sections of the response appear somewhat linear without transitional phrases or sentence variety. Additionally, while the candidate explains the changes implemented to address the issue effectively, further explanation and elaboration on these changes would strengthen the answer. Overall, a solid and informative response that effectively conveys a clear story and solution.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 3.0
+      },
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    },
+    {
+      "answer": "In response to the drop in customer satisfaction ratings from 4.00 to 2.75, I initiated a thorough analysis of the complaints, focusing on issues raised by senior citizens. I organized training sessions to enhance staff empathy and customer service skills, emphasizing the importance of treating all customers with respect.\n\nTo improve staff morale, I implemented a recognition program to acknowledge employees who excelled in customer interactions. Regular feedback sessions were held to address staff concerns and encourage open communication. Additionally, I ensured that experienced staff mentored newer employees, fostering a supportive environment and improving overall performance. This comprehensive approach aimed to rebuild customer trust and enhance service quality.",
+      "feedback": "The candidate demonstrated good communication skills in conveying information about the drop in customer satisfaction ratings and the steps they took to address it. However, there was a slight gap in structure at times, which is why we gave them a score of 3.0 for clarity. The candidate showed excellent engagement in discussions, actively participating and contributing to the conversation. They demonstrated strong discussion skills with minor improvements needed in effectiveness. The candidate also showed excellent engagement, adapting their communication style and content to suit most audiences. With some refinement in structure and minor adjustments to ensure credibility, this response has the potential to be outstanding.",
+      "metrics": {
+        "communicate_clearly": 3.0,
+        "engage_actively": 3.5,
+        "engage_discussion": 3.5
+      },
+      "question": "Help me understanda specific situation where in a recent quarter, customer satisfaction ratings in area 1 dropped from 4.00 to 2.75, leading to a significant increase in complaints about service quality from senior citizens. describe the steps you took as a manager to address this issue and what actions did you take to improve staff morale and performance. How did you manage the situation?",
+      "theme": "Customer Service Metrics: \"Measuring Customer Satisfaction to Drive Financial Inclusion\" - Developing a robust customer satisfaction metric to track progress towards increasing access to financial services, particularly for underserved populations."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 3.25,
+      "rating": "Good"
+    },
+    "engage_discussion": {
+      "score": 3.25,
+      "rating": "Good"
+    },
+    "engage_actively": {
+      "score": 3.25,
+      "rating": "Good"
+    }
+  }
+}

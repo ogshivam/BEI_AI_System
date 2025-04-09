@@ -1,0 +1,49 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "interview_date": "April 08, 2025",
+    "total_time": "2 minutes 17 seconds"
+  },
+  "answers": [
+    {
+      "answer": "In response to the drop in customer satisfaction ratings from 4.0 to 2.75 over three months, I first conducted a detailed analysis of customer feedback to identify root causes. I categorized complaints and focused on recurring themes, such as service delays and staff interactions.\n\nTo engage my team, I organized a series of workshops where we collaboratively reviewed the feedback and discussed potential solutions. This approach fostered a sense of ownership and accountability among team members.\n\nI implemented specific action items, such as enhanced training on customer service skills and establishing clear performance metrics tied to customer satisfaction. Regular team meetings allowed us to track progress and make necessary adjustments. By maintaining open communication and encouraging team input, we created a focused effort to improve service quality, ultimately leading to a recovery in customer satisfaction ratings.",
+      "feedback": "The candidate provides a clear overview of the steps taken to address the decline in customer satisfaction ratings, including analysis of customer feedback and team engagement strategies. However, their explanation could benefit from more detail on specific metrics and targets used during this process. Additionally, while they discuss the implementation of training and performance metrics, it would be helpful to see concrete examples or outcomes related to these actions. Overall, a strong structure is maintained in the response, but minor room for improvement exists in providing more depth and data-driven evidence.",
+      "metrics": {
+        "communicate_clearly": 3.0,
+        "engage_actively": 3.5,
+        "engage_discussion": 3.5
+      },
+      "question": "Let's discussa specific situation where in a recent situation where customer satisfaction ratings dropped from 4.0 to 2.75 over three months, what specific steps did you take to identify the root causes of this decline and how did you engage your team to improve these metrics? How did you manage the situation?",
+      "theme": "Process Improvement and Service Standards: \"Standardizing Processes for Enhanced Customer Experience in Financial Services\" - Streamlining processes, implementing industry-standard service standards, and leveraging technology to improve efficiency, reduce errors, and enhance overall customer satisfaction in banking and financial services."
+    },
+    {
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "answer": "When senior citizen complaints about service quality increased by 25% and average wait times reached 45 minutes, I immediately recognized the need for urgent action. I gathered data on peak hours and service bottlenecks, which revealed that staffing levels during busy periods were insufficient.\n\nTo address this, I implemented a scheduling system that aligned staff availability with peak customer traffic, ensuring that more team members were present during high-demand times. I also introduced a triage system, where staff could prioritize quick transactions for senior citizens, allowing them to be served more efficiently.\n\nAdditionally, I organized training sessions focused on improving service speed and customer interaction, specifically tailored for handling senior citizens' needs. By actively engaging the team and monitoring progress, we successfully reduced average wait times and significantly improved service quality for our senior customers.",
+      "metrics": {
+        "communicate_clearly": 3.0,
+        "engage_discussion": 3.0,
+        "engage_actively": 3.0
+      },
+      "feedback": "The candidate's response is clear and structured, effectively conveying the problem and solution. The use of specific metrics (25% increase in complaints, 45 minutes average wait time) demonstrates a good understanding of the issue. However, some minor gaps in explanation are present, such as the lack of detail on what 'basic banking services' entails. Additionally, the candidate could have provided more context about the regulatory compliance aspect of their solution. Overall, the response is strong and demonstrates good communication skills.",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 3.0,
+      "rating": "Good",
+      "description": "Ability to convey information in a clear, structured, and understandable manner"
+    },
+    "engage_discussion": {
+      "score": 3.25,
+      "rating": "Good",
+      "description": "Ability to participate and contribute effectively in dialogues"
+    },
+    "engage_actively": {
+      "score": 3.25,
+      "rating": "Good",
+      "description": "Level of active involvement and adaptation in communication"
+    }
+  },
+  "overall_rating": "Good"
+}

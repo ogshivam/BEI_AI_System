@@ -1,0 +1,39 @@
+{
+  "candidate_info": {
+    "name": "s",
+    "email": "sachinabd857@gmail.com",
+    "interview_date": "2025-04-07 00:54:59",
+    "duration_minutes": 0.2
+  },
+  "responses": [
+    {
+      "theme": "Leadership and Performance Management: \"Effective Leadership for High-Performance Teams in Financial Services\" - Establishing clear leadership structures, performance management systems, and succession planning processes to drive high-performing teams, manage risk, and promote business growth.",
+      "question": "I'd love to hear about, as a leader in our organization, a specific situation where in a recent quarter, customer satisfaction ratings dropped from 4.00 to 2.75 in area 1. how did you handle the situation when team ownership and performance issues led to this decline? what specific actions did you take to re-engage your team and improve these metrics? What steps did you take?",
+      "answer": "vvjv,",
+      "feedback": "Try to include more concrete details in your response. Consider describing the initial challenge in more detail. What specific steps did you personally take? Consider including specific metrics or improvements achieved.",
+      "metric_scores": {
+        "communicate_clearly": 0,
+        "engage_discussion": 0,
+        "engage_actively": 0
+      }
+    },
+    {
+      "theme": "Process Improvement and Service Standards: \"Standardizing Processes for Enhanced Customer Experience in Financial Services\" - Streamlining processes, implementing industry-standard service standards, and leveraging technology to improve efficiency, reduce errors, and enhance overall customer satisfaction in banking and financial services.",
+      "question": "Let's discussa specific situation where in a recent situation where customer satisfaction ratings dropped from 4.0 to 2.75 over three months, what specific steps did you take to identify the root causes of this decline and how did you engage your team to improve these metrics? How did you manage the situation?",
+      "answer": "gxfhcgjvhkjl",
+      "feedback": "Your response could benefit from more specific examples. Could you elaborate on the specific situation you encountered? Could you detail your role in implementing the solution? How did your actions impact the final results?",
+      "metric_scores": {
+        "communicate_clearly": 0,
+        "engage_discussion": 0,
+        "engage_actively": 0
+      }
+    }
+  ],
+  "competency_scores": {
+    "communicate_clearly": 0.0,
+    "engage_discussion": 0.0,
+    "engage_actively": 0.0
+  },
+  "overall_score": 0.0,
+  "rating": "Needs Improvement"
+}

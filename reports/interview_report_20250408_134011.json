@@ -1,0 +1,62 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "interview_date": "April 08, 2025",
+    "total_time": "0 minutes 35 seconds"
+  },
+  "answers": [
+    {
+      "answer": "vbebivrkwn",
+      "feedback": "The candidate's response fails to provide any clear and structured information about the actions taken to address the decline in customer satisfaction ratings. The answer does not convey any accurate, timely or concise information about specific actions taken, individual roles in improvement, or thought process. The response is essentially a jumbled collection of characters and lacks coherence or clarity.",
+      "metrics": {
+        "communicate_clearly": 1.0,
+        "engage_actively": 1.0,
+        "engage_discussion": 1.0
+      },
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence."
+    },
+    {
+      "answer": "fgrh64j",
+      "feedback": "The candidate's response does not provide any clear and structured information regarding the specific steps they took to address the decline in customer satisfaction ratings. The lack of clarity and organization makes it difficult to understand their approach, strategy, or outcomes. Additionally, there is no engagement with the question as it seems like a generic statement without any discussion or dialogue.",
+      "metrics": {
+        "communicate_clearly": 1.0,
+        "engage_actively": 1.0,
+        "engage_discussion": 1.0
+      },
+      "question": "Let's discussa specific situation where in a recent situation where customer satisfaction ratings dropped from 4.0 to 2.75 over three months, what specific steps did you take to identify the root causes of this decline and how did you engage your team to improve these metrics? How did you manage the situation?",
+      "theme": "Process Improvement and Service Standards: \"Standardizing Processes for Enhanced Customer Experience in Financial Services\" - Streamlining processes, implementing industry-standard service standards, and leveraging technology to improve efficiency, reduce errors, and enhance overall customer satisfaction in banking and financial services."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Ability to convey information in a clear, structured, and understandable manner"
+    },
+    "engage_discussion": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Ability to participate and contribute effectively in dialogues"
+    },
+    "engage_actively": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Level of active involvement and adaptation in communication"
+    }
+  },
+  "overall_score": 1.0,
+  "overall_rating": "Needs Improvement",
+  "chart_data": {
+    "labels": [
+      "Communicate clearly and concisely",
+      "Engage in discussions",
+      "Engage actively"
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "candidate_info": {
+    "name": "SHIVAM PRATAPWAR",
+    "interview_date": "April 08, 2025",
+    "total_time": "21 minutes 28 seconds"
+  },
+  "answers": [
+    {
+      "answer": " Hello brother, what's up? Do you feel, man?  Hey, what's up? Are you feeling good this time?  Hello, what's up? I think we can approach this problem in a very good way. I think it is the problem the employee is not the manager. I think we should just fire the employees at this point.",
+      "feedback": "The candidate's response shows a complete lack of clarity, structure, and organization in conveying information about addressing the decline in customer satisfaction ratings. Their answer is disjointed and fails to address any specific actions taken or strategies employed to improve metrics. The language used is informal and unprofessional, with a tone that is dismissive and unhelpful. The candidate's failure to engage in a constructive discussion and their lack of active involvement in the conversation make it difficult to extract any meaningful information from this response.",
+      "metrics": {
+        "communicate_clearly": 1.0,
+        "engage_actively": 1.0,
+        "engage_discussion": 1.0
+      },
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence."
+    },
+    {
+      "question": "Help me understanda specific situation where in a recent quarter, customer satisfaction ratings in area 1 dropped from 4.00 to 2.75, leading to a significant increase in complaints about service quality from senior citizens. describe the steps you took as a manager to address this issue and what actions did you take to improve staff morale and performance. How did you manage the situation?",
+      "answer": " The problem which has led to the dropping of customer satisfaction from 4 to 2.5, I think we should just train people in calling people and increasing the customer's turn and reviews.",
+      "metrics": {
+        "communicate_clearly": 1.5,
+        "engage_discussion": 1.0,
+        "engage_actively": 1.5
+      },
+      "feedback": "The candidate's response lacks clarity and structure in conveying the problem and proposed solution. The suggestion to 'just train people in calling people' does not provide a detailed or effective plan to address the issue. Furthermore, the answer fails to engage the interviewer with an opportunity for discussion or exploration of potential solutions. In terms of active engagement, the candidate's response is limited, failing to demonstrate any adaptation to different situations or audiences.",
+      "theme": "Customer Service Metrics: \"Measuring Customer Satisfaction to Drive Financial Inclusion\" - Developing a robust customer satisfaction metric to track progress towards increasing access to financial services, particularly for underserved populations."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Ability to convey information in a clear, structured, and understandable manner"
+    },
+    "engage_discussion": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Ability to participate and contribute effectively in dialogues"
+    },
+    "engage_actively": {
+      "score": 1.0,
+      "rating": "Needs Improvement",
+      "description": "Level of active involvement and adaptation in communication"
+    }
+  },
+  "overall_score": 1.0,
+  "overall_rating": "Needs Improvement",
+  "chart_data": {
+    "labels": [
+      "Communicate clearly and concisely",
+      "Engage in discussions",
+      "Engage actively"
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

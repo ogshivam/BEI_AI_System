@@ -1,0 +1,73 @@
+{
+    "communicate_clearly": {
+      "name": "Communicate clearly and concisely",
+      "description": "Ability to convey information in a clear, structured, and understandable manner",
+      "levels": {
+        "1.0": "He is not able to convey information clearly and logically to ensure understanding.",
+        "1.5": "Shows minimal improvement in conveying information but still lacks clarity and structure.",
+        "2.0": "He shares accurate, timely and concise information in an effective manner.",
+        "2.5": "Demonstrates good information sharing with occasional gaps in structure or clarity.",
+        "3.0": "He consistently shares accurate, timely information with the right people in the right format to ensure understanding.",
+        "3.5": "Shows excellent communication skills with minor room for improvement in structure or impact.",
+        "4.0": "He is structured, organized and clear in communication - verbal and written to ensure understanding and impact."
+      },
+      "assessment_metrics": {
+        "level1": "Minimal or unclear communication, lacks structure and professionalism",
+        "level2": "Basic communication with some clarity, but lacks detail or consistency",
+        "level3": "Clear and professional communication with good structure and detail",
+        "level4": "Exceptional communication with excellent clarity, structure, and professionalism"
+      }
+    },
+    "engage_discussion": {
+      "name": "Engage in discussions",
+      "description": "Ability to participate and contribute effectively in dialogues",
+      "levels": {
+        "1.0": "He avoids discussions as he is not able to engage people in fruitful discussions.",
+        "1.5": "Makes limited attempts to engage in discussions but struggles to maintain dialogue.",
+        "2.0": "He maintains open, honest dialogue with others to integrate their thoughts and ideas.",
+        "2.5": "Shows good engagement in discussions with room for improvement in integration of ideas.",
+        "3.0": "He models openness and transparency in sharing information with others to ensure meeting objectives.",
+        "3.5": "Demonstrates strong discussion skills with minor improvements needed in effectiveness.",
+        "4.0": "He actively participates; contributes effectively in discussions to ensure comprehension & meeting desired objectives with effectiveness."
+      },
+      "assessment_metrics": {
+        "level1": "Minimal engagement, passive responses, lacks initiative in discussion",
+        "level2": "Basic engagement with some initiative, but limited depth in responses",
+        "level3": "Active engagement with good initiative and thoughtful responses",
+        "level4": "Exceptional engagement with proactive participation and insightful contributions"
+      }
+    },
+    "engage_actively": {
+      "name": "Engage actively",
+      "description": "Level of active involvement and adaptation in communication",
+      "levels": {
+        "1.0": "He keeps communication to a minimum. He is reticent to share thoughts and ideas.",
+        "1.5": "Shows minimal active engagement with limited adaptation to different situations.",
+        "2.0": "He is attentive to verbal communication and on some occasions adjusts communication style and content according to situations.",
+        "2.5": "Demonstrates good active engagement with room for improvement in adaptation.",
+        "3.0": "He is attentive to both verbal and non verbal cues and accurately adapts communications to suit most audiences and situations.",
+        "3.5": "Shows excellent engagement with minor improvements needed in adaptation or credibility.",
+        "4.0": "He is attentive to both verbal & non verbal communication. He interprets and responds appropriately adapting communication style to suit different audience and situations conveying credibility & confidence."
+      },
+      "assessment_metrics": {
+        "level1": "Minimal active participation, lacks problem-solving initiative",
+        "level2": "Basic active participation with some problem-solving attempts",
+        "level3": "Good active participation with effective problem-solving approaches",
+        "level4": "Exceptional active participation with innovative solutions and leadership"
+      }
+    },
+    "metadata": {
+      "scoring_scale": [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0],
+      "final_score_calculation": "average",
+      "minimum_score": 1.0,
+      "maximum_score": 4.0,
+      "score_increment": 0.5,
+      "questions_per_metric": 5
+    },
+    "scoring_guidelines": {
+      "1.0-1.5": "Needs significant improvement - fundamental gaps in communication skills",
+      "2.0-2.5": "Developing - shows basic competency with room for improvement",
+      "3.0-3.5": "Proficient - demonstrates strong communication skills consistently",
+      "3.5-4.0": "Excellent - exemplary communication skills with high impact"
+    }
+  }

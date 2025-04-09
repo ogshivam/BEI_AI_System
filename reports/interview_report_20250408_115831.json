@@ -1,0 +1,42 @@
+{
+  "candidate_name": "SHIVAM PRATAPWAR",
+  "total_time": 545.6082808971405,
+  "answers": [
+    {
+      "answer": "To address the decline in customer satisfaction ratings from 4.00 to 2.75, I first conducted a root cause analysis of the complaints, focusing particularly on feedback related to service delays and staff inefficiency. I organized a team meeting to discuss these findings openly, ensuring everyone understood the gravity of the situation.\n\nI then set clear, measurable goals for each team member, linking their daily tasks to our broader customer satisfaction metrics. Regular check-ins were established to monitor progress and provide support. Additionally, I implemented targeted training sessions to enhance skills in customer engagement and problem resolution.\n\nMy thought process centered on fostering accountability and collaboration, encouraging team members to take ownership of their roles in improving service quality, and reinforcing that every interaction contributes to our overall success. This approach aimed not only to elevate our metrics but also to cultivate a culture of continuous improvement.",
+      "feedback": "The candidate provided a clear and structured response, effectively addressing the decline in customer satisfaction ratings. They broke down their approach into specific steps and explained their thought process. However, there were moments where the narrative could have been more detailed. For example, when discussing the root cause analysis, it would be beneficial to know what specific metrics or data points they used to identify the complaints related to service delays and staff inefficiency. Additionally, while they mentioned regular check-ins and targeted training sessions, it's unclear if these actions resulted in tangible improvements. To take this response to the next level, consider adding more specifics about the impact of their actions on customer satisfaction metrics.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 4.0
+      },
+      "question": "I'm curious abouta specific situation where in area 1, customer satisfaction ratings dropped from 4.00 to 2.75 over the last quarter. what specific actions did you take to address this decline, and how did you ensure that your team members understood their individual roles in improving these metrics? What was your thought process?",
+      "theme": "Team Development and Training Gaps: \"Closing Skills Gaps in a Regulatory Environment\" - Identifying and addressing training needs across teams to ensure compliance with regulatory requirements and enhance employee competencies in risk management, anti-money laundering, and customer due diligence."
+    },
+    {
+      "answer": "When senior citizen complaints about service quality increased by 25% and average wait times reached 45 minutes, I immediately recognized the need for urgent action. I gathered data on peak hours and service bottlenecks, which revealed that staffing levels during busy periods were insufficient.\n\nTo address this, I implemented a scheduling system that aligned staff availability with peak customer traffic, ensuring that more team members were present during high-demand times. I also introduced a triage system, where staff could prioritize quick transactions for senior citizens, allowing them to be served more efficiently.\n\nAdditionally, I organized training sessions focused on improving service speed and customer interaction, specifically tailored for handling senior citizens' needs. By actively engaging the team and monitoring progress, we successfully reduced average wait times and significantly improved service quality for our senior customers.",
+      "feedback": "The candidate clearly shares the problem and context of senior citizen complaints about service quality increasing by 25%. They also explain their solution with specific changes they implemented, such as scheduling and triage systems, to address the issue. The response is structured and easy to follow, making it clear what actions were taken and how they improved service quality for senior customers. One minor suggestion would be to expand on data analysis or research that led to these solutions. Overall, a strong candidate's response with room for minor improvement in supporting evidence.",
+      "metrics": {
+        "communicate_clearly": 3.5,
+        "engage_actively": 3.0,
+        "engage_discussion": 3.0
+      },
+      "question": "Could you sharea specific situation where in a recent month, senior citizen complaints about service quality increased by 25%, with an average wait time of 45 minutes for basic banking services. how did you address this issue and what changes did you implement to reduce the waiting time? What approach did you take?",
+      "theme": "Stakeholder Management (especially Senior Citizens): \"Inclusive Banking: Enhancing Service Delivery for Seniors\" - Developing age-sensitive services, products, and channels that cater to the unique needs of senior citizens, while ensuring regulatory compliance and maintaining trust in financial institutions."
+    }
+  ],
+  "metrics": {
+    "communicate_clearly": {
+      "score": 3.5,
+      "rating": "Excellent"
+    },
+    "engage_discussion": {
+      "score": 3.5,
+      "rating": "Excellent"
+    },
+    "engage_actively": {
+      "score": 3.0,
+      "rating": "Good"
+    }
+  }
+}
