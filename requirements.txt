@@ -1,0 +1,8 @@
+Flask==3.0.0
+requests==2.31.0
+python-dotenv==1.0.0
+Werkzeug==3.0.1
+reportlab==4.0.8
+fpdf==1.7.2
+gunicorn==21.2.0
+waitress==2.1.2  # For Windows deployment
